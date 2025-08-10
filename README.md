@@ -23,11 +23,11 @@ El usuario podrá navegar entre las distintas categorías, visualizar imágenes 
 
 ---
 
-## 📷 Capturas (Ejemplo)
+## 📷 Capturas (Diseño)
 
-| Pantalla Home | Detalle de Comida |
-|---------------|------------------|
-| ![Home Screenshot](./assets/screenshots/home.png) | ![Detail Screenshot](./assets/screenshots/detail.png) |
+| Pantallas |
+|-------------------|
+| ![Home Screenshot](./assets/design.png) |
 
 ---
 
