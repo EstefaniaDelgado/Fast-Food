@@ -27,7 +27,7 @@ El usuario podrá navegar entre las distintas categorías, visualizar imágenes 
 
 | Pantallas |
 |-------------------|
-| ![Home Screenshot](./assets/design.png) |
+| ![Home Screenshot](./assets/design.PNG) |
 
 ---
 
