@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   wrapper: {
     position: 'relative',
     marginBottom:10,
-    alignItems:'center'
+    alignItems:'center',
   },
   card: {
     overflow: 'hidden',
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
     width: '90%',
     alignItems: 'flex-start',
     gap: 20,
-    padding: 10,
+    paddingHorizontal: 10,
+    paddingVertical:20,
     
   },
   title: {

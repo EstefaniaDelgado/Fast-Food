@@ -1,5 +1,6 @@
 import { View, Text, Image, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import WomanYoung from '../../assets/images/woman-young.svg'
 
 
 export default function Header() {
@@ -8,10 +9,7 @@ export default function Header() {
       <Ionicons name="location-outline" size={20} color="red" />
       <Text style={styles.location}>Bogotá, <Text style={{ fontWeight: 'bold' }}>CO</Text></Text>
       <View style={styles.containerAvatar}>
-        <Image
-        source={{ uri: 'https://robohash.org/1' }}
-        style={styles.avatar}
-      />
+        <WomanYoung width={60} height={60}/>
       </View>
     </View>
   );
@@ -31,16 +29,8 @@ const styles = StyleSheet.create({
     marginLeft: 8,
     fontSize: 16,
   },
-  avatar: {
-    width: 80,
-    height: 80,
-    borderRadius: 50,
-    
-   
-  },
-  containerAvatar:{
-    backgroundColor:'yellow',
-   
+  containerAvatar:{  
     borderRadius:50
-  }
+  },
+    
 });
