@@ -7,11 +7,11 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import Deliver from '../assets/images/deliver.png';
-import Pizzas from '../assets/images/pizza-background.png';
-import Categories from '../components/Home/Categories';
-import Header from '../components/Home/Header';
-import PopularFood from '../components/Home/PopularFood';
+import Deliver from '../../assets/images/deliver.png';
+import Pizzas from '../../assets/images/pizza-background.png';
+import Categories from '../../components/Home/Categories';
+import Header from '../../components/Home/Header';
+import PopularFood from '../../components/Home/PopularFood';
 
 const home = () => {
   return (

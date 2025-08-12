@@ -30,7 +30,7 @@ export default function WelcomeScreen() {
             Nuestro trabajo es ofrecerte el mejor servicio para que tengas el
             plato que gustas lo más rápido posible
           </Text>
-          <TouchableOpacity style={styles.button} onPress={()=>router.push('/home')} >
+          <TouchableOpacity style={styles.button} onPress={()=>router.push('/(home)')} >
             <Text style={styles.buttonText}>Comencemos</Text>
           </TouchableOpacity>
         </View>
