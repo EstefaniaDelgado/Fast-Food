@@ -33,7 +33,7 @@ El usuario podrá navegar entre las distintas categorías, visualizar imágenes 
 ## 📷 Capturas (Pantalla)
 | Pantalla Inicial  | Home              |
 |-------------------|-------------------|
-| ![Index Screenshot](./assets/index.png) | ![Home Screenshot](./assets/home.png) |
+| ![Index Screenshot](./assets/Index.png) | ![Home Screenshot](./assets/Home.png) |
 
 ---
 
