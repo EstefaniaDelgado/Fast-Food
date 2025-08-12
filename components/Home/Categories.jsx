@@ -23,26 +23,33 @@ export default function Categories() {
   return (
     <View style={{ marginTop: 16 }}>
       <Text style={styles.title}>Categorias</Text>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.scroll}
-      >
-        {categories.map((cat) => {
-          const Icon = cat?.icon;
-          return (
-            <TouchableOpacity key={cat.id} style={styles.button}>
-              <Text>{cat.name}</Text>
-              <Icon width={50} height={50} />
-            </TouchableOpacity>
-          );
-        })}
-      </ScrollView>
+      <View>
+        {' '}
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.scroll}
+        >
+          {categories.map((cat) => {
+            const Icon = cat?.icon;
+            return (
+              <TouchableOpacity key={cat.id} style={styles.button}>
+                <Text>{cat.name}</Text>
+                <Icon width={30} height={30} />
+              </TouchableOpacity>
+            );
+          })}
+        </ScrollView>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  container:{
+  backgroundColor:'purple',
+  flexDirection:'row',
+  },
   title: { fontSize: 18, fontWeight: 'bold', marginLeft: 16, marginBottom: 15 },
   scroll: { paddingHorizontal: 16 },
   button: {
@@ -51,5 +58,9 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 20,
     marginRight: 8,
+    flexDirection:'row-reverse',
+    justifyContent:'center',
+    alignItems:'center',
+    gap:5
   },
 });

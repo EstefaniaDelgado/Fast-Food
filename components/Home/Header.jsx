@@ -1,15 +1,21 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import WomanYoung from '../../assets/images/woman-young.svg'
-
+import AntDesign from '@expo/vector-icons/AntDesign';
+import { StyleSheet, Text, View } from 'react-native';
+import WomanYoung from '../../assets/images/woman-young.svg';
 
 export default function Header() {
   return (
     <View style={styles.container}>
-      <Ionicons name="location-outline" size={20} color="red" />
-      <Text style={styles.location}>Bogotá, <Text style={{ fontWeight: 'bold' }}>CO</Text></Text>
+      <View style={styles.containerLocation}>
+        <Ionicons name="location-outline" size={20} color="red" />
+        <Text style={styles.location}>
+          Bogotá, <Text style={{ fontWeight: 'bold' }}>CO</Text>
+        </Text>
+        <AntDesign name="down" size={20} color="red" />
+      </View>
+
       <View style={styles.containerAvatar}>
-        <WomanYoung width={60} height={60}/>
+        <WomanYoung width={60} height={60} />
       </View>
     </View>
   );
@@ -22,15 +28,17 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 16,
     paddingVertical: 8,
-    marginTop:40,
+    marginTop: 40,
+  },
+  containerLocation:{
+    flexDirection:'row',
+    gap:8,
   },
   location: {
-    flex: 1,
     marginLeft: 8,
     fontSize: 16,
   },
-  containerAvatar:{  
-    borderRadius:50
+  containerAvatar: {
+    borderRadius: 50,
   },
-    
 });
