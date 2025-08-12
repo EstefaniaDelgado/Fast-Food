@@ -30,6 +30,12 @@ El usuario podrá navegar entre las distintas categorías, visualizar imágenes 
 | ![Home Screenshot](./assets/design.PNG) |
 
 ---
+## 📷 Capturas (Pantalla)
+| Pantalla Inicial  | Home              |
+|-------------------|-------------------|
+| ![Index Screenshot](./assets/index.jpeg) | ![Home Screenshot](./assets/home.jpeg) |
+
+---
 
 ## 🛠 Instalación y ejecución
 
