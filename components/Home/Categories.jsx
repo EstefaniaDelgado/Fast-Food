@@ -1,10 +1,4 @@
-import {
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Burguer from '../../assets/images/burguer.svg';
 import Dessert from '../../assets/images/desserts.svg';
 import HotDog from '../../assets/images/hot-dog.svg';
@@ -24,7 +18,6 @@ export default function Categories() {
     <View style={{ marginTop: 16 }}>
       <Text style={styles.title}>Categorias</Text>
       <View>
-        {' '}
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -33,10 +26,16 @@ export default function Categories() {
           {categories.map((cat) => {
             const Icon = cat?.icon;
             return (
-              <TouchableOpacity key={cat.id} style={styles.button}>
+              <Pressable
+                key={cat.id}
+                style={({ pressed }) => [
+                  styles.button,
+                  { backgroundColor: pressed ? '#E53B3B' : '#fff' },
+                ]}
+              >
                 <Text>{cat.name}</Text>
                 <Icon width={30} height={30} />
-              </TouchableOpacity>
+              </Pressable>
             );
           })}
         </ScrollView>
@@ -46,9 +45,9 @@ export default function Categories() {
 }
 
 const styles = StyleSheet.create({
-  container:{
-  backgroundColor:'purple',
-  flexDirection:'row',
+  container: {
+    backgroundColor: 'purple',
+    flexDirection: 'row',
   },
   title: { fontSize: 18, fontWeight: 'bold', marginLeft: 16, marginBottom: 15 },
   scroll: { paddingHorizontal: 16 },
@@ -58,9 +57,9 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 20,
     marginRight: 8,
-    flexDirection:'row-reverse',
-    justifyContent:'center',
-    alignItems:'center',
-    gap:5
+    flexDirection: 'row-reverse',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 5,
   },
 });

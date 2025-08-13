@@ -56,7 +56,6 @@ export default function LoginScreen() {
               />
             </View>
             <View>
-              {' '}
               <Text style={styles.label}>Contraseña</Text>
               <TextInput
                 style={styles.input}
@@ -65,7 +64,6 @@ export default function LoginScreen() {
               />
               <View style={styles.containerCheckbox}>
                 <View style={styles.layout}>
-                  {' '}
                   <Text>Recuerdame</Text>
                   <Checkbox
                     value={isChecked}
@@ -83,7 +81,14 @@ export default function LoginScreen() {
             >
               <Text style={styles.buttonText}>Ingresar</Text>
             </TouchableOpacity>
-            <View style={{flexDirection:'row', justifyContent:'center', gap:8, marginTop:5}}>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'center',
+                gap: 8,
+                marginTop: 5,
+              }}
+            >
               <Text>Sin cuenta aún?</Text>
               <Text style={{ color: '#4630EB' }}>Create una</Text>
             </View>
