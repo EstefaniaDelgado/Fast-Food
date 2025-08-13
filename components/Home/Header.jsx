@@ -1,7 +1,8 @@
 import { Ionicons } from '@expo/vector-icons';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import WomanYoung from '../../assets/images/woman-young.svg';
+import { router } from 'expo-router';
 
 export default function Header() {
   return (
@@ -14,9 +15,9 @@ export default function Header() {
         <AntDesign name="down" size={20} color="red" />
       </View>
 
-      <View style={styles.containerAvatar}>
+      <TouchableOpacity style={styles.containerAvatar} onPress={()=>router.push('/login')}>
         <WomanYoung width={60} height={60} />
-      </View>
+      </TouchableOpacity>
     </View>
   );
 }
