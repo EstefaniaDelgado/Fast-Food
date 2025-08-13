@@ -22,6 +22,10 @@ El usuario podrá navegar entre las distintas categorías, visualizar imágenes 
 - **React Navigation** (para la navegación entre pantallas)
 
 ---
+## 📽 Demo
+![Fast Food Demo](./assets/Fast_Food.gif)
+
+---
 
 ## 👩🏻‍💻 Capturas (Pantallas)
 | Login             | Pantalla Inicial  | Home              |
